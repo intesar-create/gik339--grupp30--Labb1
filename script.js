@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Uppgift 6 - Eventlyssnare till knappen
     myButton.addEventListener('click', function () {
-        myDiv.style.display = 'none'; // Göm div-elementet vid knappklick
+        myDiv.remove(); // Göm div-elementet vid knappklick
     });
 });
