@@ -7,20 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labb 1 - Grupp 30</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/styel.css">
 </head>
 
 <body>
-    <label for="color">Färg:</label>
-    <label for="content">Innehåll:</label>
-    <label for="divStyle"> Stil på box:</label>
+    <h1 class="h1">Labb 1 - Grupp 30</h1>
 
-    <input type="text" id="color" name="color" class="textfield">
-    <input type="text" id="content" name="content" class="textfield">
-    <input type="checkbox" id="divStyle" name="divStyle" class="checkbox">
+    <div class="div1">
 
-    <button id="myButton" class="customButton" onclick="myFunction()">Tar bort</button>
-    <div id="myDiv" class="customDiv"> Div som egentligen ska vara tom </div>
+        <label for="color">Färg:</label>
+        <input type="text" id="color" name="color" class="textfield">
 
+        <label for="content">Innehåll:</label>
+        <input type="text" id="content" name="content" class="textfield">
+
+        <label for="divStyle"> Stil på box:</label>
+        <input type="checkbox" id="divStyle" name="divStyle" class="checkbox">
+
+
+
+        <button id="myButton">Tar bort</button>
+        <div id="myDiv" class="customDiv"> Div som egentligen ska vara tom </div>
+    </div>
 </body>
 
 </html>
