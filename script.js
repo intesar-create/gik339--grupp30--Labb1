@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const myDiv = document.getElementById('myDiv');
 
     // Uppgift 5 - Skapa en fördefinierad funktion för textfälten
-    function handleInputChange(event) {
-        console.log(event.target); // Skriv ut avsändaren till konsolen
+    function handleInputChange(e) {
+        console.log(e.target); // Skriv ut avsändaren till konsolen
 
-        const name = event.target.getAttribute('name'); // Hämta namnet på avsändaren
+        const name = e.target.getAttribute('name'); // Hämta namnet på avsändaren
         if (name === 'content') {
-            const value = event.target.value; // Hämta värdet från avsändaren
+            const value = e.target.value; // Hämta värdet från avsändaren
             myDiv.innerHTML = value; // Skriv värdet till div-elementet
         }
     }
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Uppgift 6 - Eventlyssnare till checkboxen
-    checkbox.addEventListener('change', function (event) {
+    checkbox.addEventListener('change', function (e) {
         const colorInput = document.getElementById('color'); // Hämta färg-input
         myDiv.style.backgroundColor = colorInput.value; // Sätt bakgrundsfärg på div-elementet
     });
